@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-container bg-light" id="bgContainer">
+        <!--sidebar-start-->
+        <div class="sidebar bg-white fixed shadow d-none" id="sidebarCon">
+            <div class="sidebar-inner-container">
+                <div class="sidebar-profile" id="sidebar-inside-profile-image">
+                    <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690016597/profileimage_sy1wqj.jpg" class="sidebar-profile-image" />
+                    <div class="sidebar-profile-details d-none">
+                        <h5 class="sidebar-profile-name">Viswa Tummala</h5>
+                        <p class="sidebar-profile-email">viswatejatummala@gmail.com</p>
+                    </div>
+
+                </div>
+                <div class="sidebar-list-container">
+                    <ul class="sidebar-list">
+                        <li class="sidebar-listitem active" id="home">
+                            <i class="fas fa-home sidebar-icon"></i>
+                            <span class="list-item" href="#">Home</span>
+                        </li>
+                        <li class="sidebar-listitem" id="about">
+                            <i class="fas fa-user sidebar-icon"></i>
+                            <span class="list-item" href="#">About</span>
+                        </li>
+                        <li class="sidebar-listitem" id="services">
+                            <i class="fas fa-list sidebar-icon"></i>
+                            <span class="list-item" href="#">Services</span>
+                        </li>
+                        <li class="sidebar-listitem" id="portfolio">
+                            <i class="fas fa-briefcase sidebar-icon"></i>
+                            <span class="list-item" href="#">Portfolio</span>
+                        </li>
+                        <li class="sidebar-listitem" id="contact">
+                            <i class="fas fa-phone-alt sidebar-icon"></i>
+                            <span class="list-item" href="#">Contact</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690016597/profileimage_sy1wqj.jpg" class="sidebar-profile-image ml-3 mt-4" id="profile-image" />
+        <!--sidebar-end-->
+
+        <!--navbar-start-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white nav-con fixed-top d-lg-none">
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690016597/profileimage_sy1wqj.jpg" class="profile-click-image" id="profileButton" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active nav-item" id="homeNavCon" href="#">
+                        <i class="fas fa-home sidebar-icon"></i>
+                        Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link nav-item" id="aboutNavCon" href="#">
+                        <i class="fas fa-user sidebar-icon"></i>
+                        About</a>
+                    <a class="nav-link nav-item" id="servicesNavCon" href="#">
+                        <i class="fas fa-list sidebar-icon"></i>
+                        Services</a>
+                    <a class="nav-link nav-item" id="portfolioNavCon" href="#">
+                        <i class="fas fa-briefcase sidebar-icon"></i>
+                        Portfolio</a>
+                    <a class="nav-link nav-item" id="contactNavCon" href="#">
+                        <i class="fas fa-phone-alt sidebar-icon"></i>
+                        Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!--navbar-end-->
+
+        <div class="main-contents-container">
+
+            <!--home-page-start-->
+            <div class="" id="HomeCon">
+                <div class="home-container">
+                    <div class="home-sub-container">
+                        <h2 class="home-con-name">Hello, my name is
+                            <span class="home-name special-text" id="homeConMyName">Viswa Tummala</span>
+                            <!--specialtest-->
+                        </h2>
+                        <h1 class="home-con-role">I'm a <span class="typing special-text" id="homeConMyRole"></span></h1>
+                        <!--typing is specialtext-->
+                        <p class="home-con-description">
+                            I am Viswa, a passionate 3rd-year Btech CSE student at Parul University with a strong affinity
+                            for web development and technology. My journey into the world of coding began with an insatiable
+                            curiosity to craft digital experiences that leave a lasting impact.
+                        </p>
+                        <button class="home-btn special-background" id="MoreAboutMeBtn">More About Me</button>
+                        <!--button's background-color is changed-->
+                    </div>
+                </div>
+            </div>
+
+            <!--home-page-end-->
+
+            <!--about-page-start-->
+            <div class="d-none" id="AboutCon">
+                <div class="about-container">
+                    <div class="aboutMe-con mt-5 special-text" id="aboutMeConHeading">
+                        <h1 class="aboutme-heading mt-5">About Me</h1>
+                        <div class="about-hr-con">
+                            <hr class="aboutMe-Hr-1" />
+                            <span class="hr-description">I am Viswateja</span>
+                            <hr class="aboutMe-Hr-2" />
+                        </div>
+                    </div>
+                    <h2 class="about-introduction">
+                        I'm a Viswa Tummala and I'm a
+                        <span class="about-role special-text" id="aboutConMyRole">Web Developer</span>
+                        <!--specialtest-->
+                    </h2>
+                    <p class="about-descrption">
+                        Proficient in web development languages such as HTML, CSS, and JavaScript,
+                        I thrive on building interactive and visually appealing websites. My toolbox
+                        includes frameworks like Bootstrap and cdnjs, which I leverage to create dynamic
+                        and responsive web applications.Now I'm currently seeking an internship opportunity in web development,
+                        I am eager to gain practical, hands-on experience and insight into the fast-paced world of the
+                        tech industry. I see internships as a stepping stone to enhance my skillset, work collaboratively
+                        with industry experts, and create meaningful projects that solve real-world challenges.
+                    </p>
+                    <h2 class="about-details-heading special-text" id="aboutConPersonalDetails">Personal Details :</h2>
+                    <!--special-text-->
+                    <div class="about-list">
+                        <ul class="about-details-list">
+                            <li class="about-details">
+                                <span class="about-Detail">DOB : </span>
+                                15th Oct 2003
+                            </li>
+                            <li class="about-details">
+                                <span class="about-Detail">Age : </span>
+                                19
+                            </li>
+                            <li class="about-details">
+                                <span class="about-Detail">gmail : </span>
+                                viswatejatummala@gmail.com
+                            </li>
+                            <li class="about-details">
+                                <span class="about-Detail">City : </span>
+                                Vadodara
+                            </li>
+                        </ul>
+                        <ul class="about-details-list">
+                            <li class="about-details">
+                                <span class="about-Detail">Degree : </span>
+                                Currently Btech 3rd Year Cse
+                            </li>
+                            <li class="about-details">
+                                <span class="about-Detail">CGPA : </span>
+                                8.195(Present)
+                            </li>
+                            <li class="about-details">
+                                <span class="about-Detail">Phone : </span>
+                                78*******6
+                            </li>
+                            <li class="about-details">
+                                <span class="about-Detail">Internship : </span>
+                                Part time(Available)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-skills-container">
+                        <h2 class="about-skill-con-heading special-text" id="aboutConSkillsHeading">Skills :</h2>
+                        <!--special-text-->
+                        <li>
+                            <div class="about-skill">
+                                <h3 class="about-skill-name">
+                                    <i class="fab fa-html5"></i>
+                                    html
+                                </h3>
+                                <p class="about-skill-percent">90%</p>
+                            </div>
+                            <span class="bar bg-white"><span class="html special-background" id="aboutConHtmlSkill"></span></span>
+                            <!--background-color should be added to inner span ele-->
+                        </li>
+                        <li>
+                            <div class="about-skill">
+                                <h3 class="about-skill-name">
+                                    <i class="fab fa-css3-alt"></i>
+                                    CSS
+                                </h3>
+                                <p class="about-skill-percent">80%</p>
+                            </div>
+                            <span class="bar bg-white"><span class="css special-background" id="aboutConCssSkill"></span></span>
+                            <!--background-color should be added to inner span ele-->
+                        </li>
+                        <li>
+                            <div class="about-skill">
+                                <h3 class="about-skill-name">
+                                    <i class="fab fa-js-square"></i>
+                                    JavaScript
+                                </h3>
+                                <p class="about-skill-percent">70%</p>
+                            </div>
+                            <span class="bar bg-white"><span class="js special-background" id="aboutConJsSkill"></span></span>
+                            <!--background-color should be added to inner span ele-->
+                        </li>
+                        <li>
+                            <div class="about-skill">
+                                <h3 class="about-skill-name">
+                                    <i class="fab fa-python"></i>
+                                    Python
+                                </h3>
+                                <p class="about-skill-percent">80%</p>
+                            </div>
+                            <span class="bar bg-white"><span class="python special-background" id="aboutConPythonSkill"></span></span>
+                            <!--background-color should be added to inner span ele-->
+                        </li>
+                        <li>
+                            <div class="about-skill">
+                                <h3 class="about-skill-name">
+                                    <i class="fas fa-database"></i>
+                                    SQLite
+                                </h3>
+                                <p class="about-skill-percent">90%</p>
+                            </div>
+                            <span class="bar bg-white"><span class="sql special-background" id="aboutConSqlSkill"></span></span>
+                            <!--background-color should be added to inner span ele-->
+                        </li>
+                        <li>
+                            <div class="about-skill">
+                                <h3 class="about-skill-name">
+                                    OOPS</h3>
+                                <p class="about-skill-percent">85%</p>
+                            </div>
+                            <span class="bar bg-white"><span class="oops special-background" id="aboutConOopsSkill"></span></span>
+                            <!--background-color should be added to inner span ele-->
+                        </li>
+                    </div>
+
+                    <button class="Download-Resume-Btn special-background" id="aboutConDownloadResumeBtn"><a class="text-dark" href="https://drive.google.com/file/d/1hQRQ0u4MLm9F3Z--PPXuLjklYR7sNaKP/view?usp=sharing" target="_blank">
+                            View Resume
+                        </a></button>
+                </div>
+            </div>
+            <!--about-page-end-->
+
+            <!--services-page-start-->
+            <div class="d-none" id="ServicesCon">
+                <div class="service-container">
+                    <div class="aboutMe-con mt-5 ml-4 special-text" id="serviceConHeading">
+                        <!--special-text-->
+                        <h1 class="aboutme-heading mt-3">Services</h1>
+                        <div class="about-hr-con">
+                            <hr class="aboutMe-Hr-1" />
+                            <span class="hr-description">I am Viswateja</span>
+                            <hr class="aboutMe-Hr-2" />
+                        </div>
+                    </div>
+                    <div class="service-card shadow">
+                        <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690105098/WhatsApp_Image_2023-07-23_at_15.04.29_hgwqol.jpg" class="service-card-image" />
+                        <div class="service-card-contents">
+                            <h1 class="service-card-contents-heading special-text" id="serviceConCardHeading1">Web Development Services</h1>
+                            <!--special test-->
+                            <p class="service-card-contents-description">
+                                Design and develop responsive and visually appealing websites using HTML, CSS, and JavaScript and Frame works like BootStrap.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-card shadow">
+                        <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690105105/WhatsApp_Image_2023-07-23_at_15.01.16_ztxzbu.jpg" class="service-card-image" />
+                        <div class="service-card-contents">
+                            <h1 class="service-card-contents-heading special-text" id="serviceConCardHeading2">Portfolio or Personal Website Development</h1>
+                            <!--special test-->
+                            <p class="service-card-contents-description">
+                                Assist clients in creating professional portfolios or personal websites to showcase their work and skills.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-card shadow">
+                        <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690105089/WhatsApp_Image_2023-07-23_at_15.07.14_wgiwg1.jpg" class="service-card-image" />
+                        <div class="service-card-contents">
+                            <h1 class="service-card-contents-heading text-center special-text" id="serviceConCardHeading3">Database Management</h1>
+                            <!--special test-->
+                            <p class="service-card-contents-description">
+                                Provide database design and implementation services using SQLite, including setting up tables,
+                                defining relationships, and optimizing queries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--service-page-end-->
+
+            <!--portfolio-page-start-->
+            <div class="d-none" id="PortfolioCon">
+                <div class="portfolio-container">
+                    <div class="aboutMe-con mt-5 special-text" id="portfolioConHeading">
+                        <!--special-text-->
+                        <h1 class="aboutme-heading mt-5">Portfolio</h1>
+                        <div class="about-hr-con">
+                            <hr class="aboutMe-Hr-1" />
+                            <span class="hr-description">I am Viswateja</span>
+                            <hr class="aboutMe-Hr-2" />
+                        </div>
+                    </div>
+                    <h3 class="portfolio-heading">My Projects:</h3>
+                    <!--special test-->
+                    <div class="porfolio-project-card-container">
+                        <div class="portfolio-project-card shadow">
+                            <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690539492/wikiglobe_u8f78y.jpg" class="porfolio-project-image" />
+                            <div class="portfolio-project-card-contents-container">
+                                <h1 class="portfolio-project-card-heading">Title :
+                                    <span class="portfolio-project-title special-text" id="portfolioConCardHeading1">WikiGlobe</span>
+                                    <!--special test-->
+                                </h1>
+                                <p class="portfolio-project-card-description">
+                                    Welcome to WikiGlobe, where boundless knowledge awaits at your fingertips.
+                                    Embark on an enlightening journey through the vast expanse of the Wikipedia
+                                    universe with our intuitive and user-friendly search app.
+                                </p>
+                                <a class="portfolio-project-link" href="https://viswawikiglobe.ccbp.tech/" target="_blank">
+                                    <!--special test-->
+                                    Project Link
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-project-card shadow">
+                            <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690539944/foodmenu_z61l7o.jpg" class="porfolio-project-image" />
+                            <div class="portfolio-project-card-contents-container">
+                                <h1 class="portfolio-project-card-heading">Title :
+                                    <span class="portfolio-project-title special-text" id="portfolioConCardHeading2">Food Menu</span>
+                                    <!--special test-->
+                                </h1>
+                                <p class="portfolio-project-card-description">
+                                    Welcome to our Food Menu Webpage, your one-stop destination to
+                                    satisfy your cravings for delectable delights at any time of the
+                                    day or night. We take pride in curating a diverse and mouthwatering
+                                    selection of dishes.
+                                </p>
+                                <a class="" href="https://viswafoodmenu.ccbp.tech/" target="_blank">
+                                    <!--special test-->
+                                    Project Link
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-project-card shadow">
+                            <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690539479/country_population_lmdw97.jpg" class="porfolio-project-image" />
+                            <div class="portfolio-project-card-contents-container">
+                                <h1 class="portfolio-project-card-heading">Title :
+                                    <span class="portfolio-project-title special-text" id="portfolioConCardHeading3">Population of Country</span>
+                                    <!--special test-->
+                                </h1>
+                                <p class="portfolio-project-card-description">
+                                    Welcome to our Population of [Country] Webpage, where numbers come to life, and the story of
+                                    a nation unfolds through its people. Here, we delve into the captivating world of demographics,
+                                    providing you with an in-depth understanding of the population trends.
+                                </p>
+                                <a class="" href="https://viswajs.ccbp.tech/" target="_blank">
+                                    <!--special test-->
+                                    Project Link
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-project-card shadow">
+                            <img src="https://res.cloudinary.com/dgl0v7vwf/image/upload/v1690538493/typing_test_scw3zi.jpg" class="porfolio-project-image" />
+                            <div class="portfolio-project-card-contents-container">
+                                <h1 class="portfolio-project-card-heading">Title :
+                                    <span class="portfolio-project-title special-text" id="portfolioConCardHeading4">Typing Master</span>
+                                    <!--special test-->
+                                </h1>
+                                <p class="portfolio-project-card-description">
+                                    Welcome to Typing Master, the ultimate typing test webpage designed to help you improve your
+                                    typing skills and speed.The webpage is constructed using a combination of HTML, CSS, JavaScript,
+                                    and API integration, ensuring a seamless and engaging user experience.
+                                </p>
+                                <a class="" href="https://viswatypingtest.ccbp.tech" target="_blank">
+                                    <!--special test-->
+                                    Project Link
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--portfolio-page-end-->
+
+            <!--contactme-page-start-->
+            <div class="d-none" id="ContactCon">
+                <div class="contact-Con bg-light">
+                    <div class="aboutMe-con mt-5 ml-5 special-text" id="contactConHeading">
+                        <h1 class="aboutme-heading mt-5 ml-4">Contact</h1>
+                        <div class="about-hr-con ml-5 ml-4">
+                            <hr class="aboutMe-Hr-1" />
+                            <span class="hr-description">I am Viswateja</span>
+                            <hr class="aboutMe-Hr-2" />
+                        </div>
+                    </div>
+                    <h1 class="aboutCon-question ml-3">If you have Any Questions ?</h1>
+                    <!--special test-->
+                    <p class="aboutCon-answer text-center special-text" id="ContactConAnswer">I'm at your Service</p>
+                    <!--special test-->
+                    <div class="contact-details-container">
+                        <!--two card containers-->
+                        <div class="contact-details-card-container">
+                            <!--three cards-->
+                            <div class="contact-details-card shadow">
+                                <i class="fas fa-phone-alt contact-details-icon special-text" id="ContactCallIcon"></i>
+                                <!--special test-->
+                                <h5 class="contact-details-card-heading">Call me</h5>
+                                <p class="contact-details-card-description">7842841226</p>
+                            </div>
+                            <div class="contact-details-card shadow">
+                                <i class="fas fa-map-marker-alt contact-details-icon special-text" id="ContactlocationIcon"></i>
+                                <!--special test-->
+                                <h5 class="contact-details-card-heading">Parul University</h5>
+                                <p class="contact-details-card-description">Vadodara,Gujarat</p>
+                            </div>
+                            <div class="contact-details-card shadow">
+                                <i class="fas fa-envelope contact-details-icon special-text" id="ContactemailIcon"></i>
+                                <!--special test-->
+                                <h5 class="contact-details-card-heading">Email</h5>
+                                <p class="contact-details-card-description">tvteja2003@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-details-card-container">
+                            <div class="contact-details-card shadow">
+                                <i class="fab fa-instagram-square contact-details-icon special-text" id="ContactinstaIcon"></i>
+                                <!--special test-->
+                                <h5 class="contact-details-card-heading">instagram</h5>
+                                <p class="contact-details-card-description">viswatummala</p>
+                            </div>
+                            <div class="contact-details-card shadow">
+                                <i class="fab fa-linkedin contact-details-icon special-text" id="ContactLinkedinIcon"></i>
+                                <!--special test-->
+                                <h5 class="contact-details-card-heading">linkedin</h5>
+                                <p class="contact-details-card-description">Viswateja Tummala</p>
+                            </div>
+                            <div class="contact-details-card shadow">
+                                <i class="fab fa-github-square contact-details-icon special-text" id="ContactGitHubIcon"></i>
+                                <!--special test-->
+                                <h5 class="contact-details-card-heading">github</h5>
+                                <p class="contact-details-card-description">viswa15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--contactme-page-end-->
+            <!--Floatingicons start-->
+            <div class="floating-icons" id="floatingIcons">
+                <ul>
+                    <a href="https://instagram.com/viswatummala?igshid=MzRlODBiNWFlZA==" target="_blank">
+                        <li class="instagram"><i class="fa fa-instagram"></i></li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/viswateja-tummala" target="_blank">
+                        <li class="linkedin"><i class="fa fa-linkedin"></i></li>
+                    </a>
+                    <a href="https://github.com/viswa15" target="_blank">
+                        <li class="github"><i class="fa fa-github"></i></li>
+                    </a>
+                </ul>
+            </div>
+            <!--floating icons end-->
+
+            <!-- text-color-switcher-start-->
+            <div class="color-switcher">
+                <div class="switcher-btn">
+                    <i class="fas fa-cog special-text" id="colorSwitcherIcon"></i>
+                </div>
+                <h3 class="special-text" id="colorSwitcherText">select color</h3>
+                <div class="theme-buttons-container">
+                    <span class="theme-buttoons" data-color="#8e44ad" style="background:#27ae60" id="greenBtn"></span>
+                    <span class="theme-buttoons" data-color="#2980b9" style="background:#2980b9" id="blueBtn"></span>
+                    <span class="theme-buttoons" data-color="#f39c12" style="background:#FF7F50" id="orangeBtn"></span>
+                    <span class="theme-buttoons" data-color="#27ae60" style="background:#8e44ad" id="violetBtn"></span>
+                    <span class="theme-buttoons" data-color="#e74c3c" style="background:#e74c3c" id="redBtn"></span>
+                    <span class="theme-buttoons" data-color="#e84393" style="background:#e84393" id="pinkBtn"></span>
+                </div>
+            </div>
+            <!--text-color-switcher-end-->
+        </div>
+    </div>
+    <!--JS FILES-->
+    <script src="index.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var typed = new Typed(".typing", {
+            strings: ["Web Developer", "Coder", "Frontend Developer", "Traveller"],
+            typeSpeed: 100,
+            BackSpeed: 100,
+            loop: true
+        })
+    </script>
+    <script>
+        document.querySelector('.switcher-btn').onclick = () => {
+            document.querySelector('.color-switcher').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
